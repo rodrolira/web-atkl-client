@@ -1,0 +1,50 @@
+.App,
+.layout {
+  text-align: center;
+  background-image: linear-gradient(rgb(7, 81, 18), rgb(34, 15, 46));
+  background-repeat: no-repeat;
+  
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  flex-grow: 1;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  /* Light grey */
+  border-top: 16px solid #3498db;
+  /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Estilos responsivos */
+@media (max-width: 640px) {
+  .App,
+  .layout{
+      width: 100%;
+  }
+}
+
+
